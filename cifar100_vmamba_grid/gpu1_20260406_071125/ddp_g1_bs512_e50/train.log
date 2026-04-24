@@ -1,0 +1,320 @@
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/models/csms6s.py:74: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, u, delta, A, B, C, D=None, delta_bias=None, delta_softplus=False, oflex=True, backend=None):
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/models/csms6s.py:91: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/models/mamba2/ssd_combined.py:764: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, zxbcdt, conv1d_weight, conv1d_bias, dt_bias, A, D, chunk_size, initial_states=None, seq_idx=None, dt_limit=(0.0, float("inf")), return_final_states=False, activation="silu",
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/models/mamba2/ssd_combined.py:842: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, dout, *args):
+Parallel mode: ddp
+World size: 1 | Rank: 0 | Device: cuda:0
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:996: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp_enabled)
+TensorBoard logging enabled: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/tensorboard
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=4.4176  acc@1=4.00%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [1/50] train_loss=4.2606 train_acc=6.22% val_loss=4.0063 val_acc=9.35% best=9.35% time=35.1s | throughput=1414.72 samples/s | stat_eff=0.000012 loss/sample | goodput=1231.03 samples/s | cum_wall=0.01h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=3.8928  acc@1=11.99%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [2/50] train_loss=3.8257 train_acc=13.49% val_loss=3.6612 val_acc=17.82% best=17.82% time=31.2s | throughput=1593.08 samples/s | stat_eff=0.000005 loss/sample | goodput=1432.42 samples/s | cum_wall=0.02h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=3.5830  acc@1=19.20%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [3/50] train_loss=3.5190 train_acc=20.44% val_loss=3.3844 val_acc=24.02% best=24.02% time=31.4s | throughput=1580.61 samples/s | stat_eff=0.000005 loss/sample | goodput=1419.28 samples/s | cum_wall=0.03h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=3.3113  acc@1=25.55%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [4/50] train_loss=3.2561 train_acc=26.93% val_loss=3.1223 val_acc=30.76% best=30.76% time=31.1s | throughput=1596.72 samples/s | stat_eff=0.000007 loss/sample | goodput=1445.51 samples/s | cum_wall=0.04h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=3.0688  acc@1=31.41%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [5/50] train_loss=3.0241 train_acc=32.61% val_loss=2.9162 val_acc=35.76% best=35.76% time=31.3s | throughput=1588.76 samples/s | stat_eff=0.000004 loss/sample | goodput=1424.23 samples/s | cum_wall=0.04h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.8378  acc@1=37.43%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [6/50] train_loss=2.8175 train_acc=37.93% val_loss=2.7277 val_acc=40.45% best=40.45% time=31.3s | throughput=1589.14 samples/s | stat_eff=0.000003 loss/sample | goodput=1432.41 samples/s | cum_wall=0.05h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.6490  acc@1=42.27%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [7/50] train_loss=2.6394 train_acc=42.71% val_loss=2.5998 val_acc=44.16% best=44.16% time=31.2s | throughput=1589.47 samples/s | stat_eff=0.000003 loss/sample | goodput=1430.60 samples/s | cum_wall=0.06h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.4853  acc@1=46.69%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [8/50] train_loss=2.4855 train_acc=46.90% val_loss=2.4823 val_acc=47.40% best=47.40% time=31.3s | throughput=1586.43 samples/s | stat_eff=0.000001 loss/sample | goodput=1426.90 samples/s | cum_wall=0.07h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.3335  acc@1=51.52%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [9/50] train_loss=2.3367 train_acc=51.37% val_loss=2.3804 val_acc=50.57% best=50.57% time=31.1s | throughput=1596.01 samples/s | stat_eff=0.000002 loss/sample | goodput=1441.35 samples/s | cum_wall=0.08h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.2164  acc@1=55.04%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [10/50] train_loss=2.2219 train_acc=54.71% val_loss=2.3243 val_acc=51.85% best=51.85% time=31.3s | throughput=1585.50 samples/s | stat_eff=-0.000000 loss/sample | goodput=1421.23 samples/s | cum_wall=0.09h
+Saved checkpoint: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/ckpt_epoch_010.pth
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.1030  acc@1=58.36%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [11/50] train_loss=2.1127 train_acc=57.97% val_loss=2.2650 val_acc=54.06% best=54.06% time=31.4s | throughput=1580.95 samples/s | stat_eff=-0.000002 loss/sample | goodput=1415.31 samples/s | cum_wall=0.10h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=2.0053  acc@1=61.11%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [12/50] train_loss=2.0176 train_acc=60.78% val_loss=2.2240 val_acc=55.70% best=55.70% time=31.2s | throughput=1589.56 samples/s | stat_eff=-0.000002 loss/sample | goodput=1429.31 samples/s | cum_wall=0.11h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.9245  acc@1=64.05%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [13/50] train_loss=1.9238 train_acc=64.03% val_loss=2.1934 val_acc=56.77% best=56.77% time=31.2s | throughput=1590.12 samples/s | stat_eff=-0.000000 loss/sample | goodput=1428.24 samples/s | cum_wall=0.11h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.8338  acc@1=66.68%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [14/50] train_loss=1.8396 train_acc=66.44% val_loss=2.1677 val_acc=57.78% best=57.78% time=31.4s | throughput=1583.01 samples/s | stat_eff=-0.000001 loss/sample | goodput=1421.36 samples/s | cum_wall=0.12h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.7492  acc@1=69.86%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [15/50] train_loss=1.7553 train_acc=69.41% val_loss=2.1210 val_acc=59.45% best=59.45% time=31.1s | throughput=1594.86 samples/s | stat_eff=-0.000003 loss/sample | goodput=1434.48 samples/s | cum_wall=0.13h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.6524  acc@1=73.11%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [16/50] train_loss=1.6685 train_acc=72.42% val_loss=2.1207 val_acc=59.69% best=59.69% time=31.0s | throughput=1602.80 samples/s | stat_eff=-0.000000 loss/sample | goodput=1446.24 samples/s | cum_wall=0.14h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.5649  acc@1=76.32%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [17/50] train_loss=1.5884 train_acc=75.45% val_loss=2.1025 val_acc=60.31% best=60.31% time=31.4s | throughput=1582.43 samples/s | stat_eff=-0.000002 loss/sample | goodput=1419.93 samples/s | cum_wall=0.15h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.4963  acc@1=79.14%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [18/50] train_loss=1.5162 train_acc=78.05% val_loss=2.0919 val_acc=60.86% best=60.86% time=31.1s | throughput=1598.28 samples/s | stat_eff=-0.000002 loss/sample | goodput=1449.07 samples/s | cum_wall=0.16h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.4344  acc@1=81.39%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [19/50] train_loss=1.4470 train_acc=80.68% val_loss=2.1024 val_acc=60.88% best=60.88% time=31.1s | throughput=1599.08 samples/s | stat_eff=0.000001 loss/sample | goodput=1444.09 samples/s | cum_wall=0.17h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.3700  acc@1=83.93%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [20/50] train_loss=1.3841 train_acc=83.22% val_loss=2.1036 val_acc=61.14% best=61.14% time=31.1s | throughput=1597.11 samples/s | stat_eff=-0.000002 loss/sample | goodput=1442.58 samples/s | cum_wall=0.17h
+Saved checkpoint: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/ckpt_epoch_020.pth
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.3101  acc@1=86.31%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [21/50] train_loss=1.3210 train_acc=85.82% val_loss=2.1111 val_acc=61.52% best=61.52% time=31.1s | throughput=1596.39 samples/s | stat_eff=-0.000002 loss/sample | goodput=1440.74 samples/s | cum_wall=0.18h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.2601  acc@1=88.11%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [22/50] train_loss=1.2766 train_acc=87.43% val_loss=2.0932 val_acc=61.85% best=61.85% time=31.4s | throughput=1583.63 samples/s | stat_eff=-0.000003 loss/sample | goodput=1422.05 samples/s | cum_wall=0.19h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.2197  acc@1=89.61%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [23/50] train_loss=1.2307 train_acc=89.17% val_loss=2.0918 val_acc=62.33% best=62.33% time=31.4s | throughput=1580.82 samples/s | stat_eff=-0.000001 loss/sample | goodput=1421.52 samples/s | cum_wall=0.20h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.1819  acc@1=91.23%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [24/50] train_loss=1.1893 train_acc=90.88% val_loss=2.0823 val_acc=62.42% best=62.42% time=31.1s | throughput=1597.37 samples/s | stat_eff=-0.000000 loss/sample | goodput=1444.59 samples/s | cum_wall=0.21h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.1486  acc@1=92.37%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [25/50] train_loss=1.1589 train_acc=92.02% val_loss=2.0833 val_acc=62.93% best=62.93% time=31.5s | throughput=1577.53 samples/s | stat_eff=-0.000002 loss/sample | goodput=1417.38 samples/s | cum_wall=0.22h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.1252  acc@1=93.17%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [26/50] train_loss=1.1316 train_acc=92.83% val_loss=2.0840 val_acc=63.04% best=63.04% time=31.6s | throughput=1571.58 samples/s | stat_eff=0.000001 loss/sample | goodput=1402.68 samples/s | cum_wall=0.23h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.1024  acc@1=93.85%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [27/50] train_loss=1.1069 train_acc=93.65% val_loss=2.0703 val_acc=63.18% best=63.18% time=31.3s | throughput=1585.65 samples/s | stat_eff=0.000000 loss/sample | goodput=1430.97 samples/s | cum_wall=0.24h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0844  acc@1=94.54%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [28/50] train_loss=1.0862 train_acc=94.39% val_loss=2.0506 val_acc=63.79% best=63.79% time=31.4s | throughput=1579.79 samples/s | stat_eff=0.000001 loss/sample | goodput=1414.10 samples/s | cum_wall=0.24h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0597  acc@1=95.11%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [29/50] train_loss=1.0656 train_acc=94.99% val_loss=2.0543 val_acc=63.98% best=63.98% time=31.4s | throughput=1583.19 samples/s | stat_eff=-0.000000 loss/sample | goodput=1423.86 samples/s | cum_wall=0.25h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0452  acc@1=95.68%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [30/50] train_loss=1.0491 train_acc=95.49% val_loss=2.0432 val_acc=64.53% best=64.53% time=31.7s | throughput=1567.96 samples/s | stat_eff=-0.000001 loss/sample | goodput=1398.32 samples/s | cum_wall=0.26h
+Saved checkpoint: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/ckpt_epoch_030.pth
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0328  acc@1=95.91%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [31/50] train_loss=1.0359 train_acc=95.76% val_loss=2.0526 val_acc=63.99% best=64.53% time=30.9s | throughput=1609.32 samples/s | stat_eff=-0.000000 loss/sample | goodput=1464.56 samples/s | cum_wall=0.27h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0263  acc@1=96.15%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [32/50] train_loss=1.0256 train_acc=96.13% val_loss=2.0408 val_acc=64.53% best=64.53% time=31.3s | throughput=1589.12 samples/s | stat_eff=-0.000002 loss/sample | goodput=1432.09 samples/s | cum_wall=0.28h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=1.0099  acc@1=96.52%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [33/50] train_loss=1.0120 train_acc=96.47% val_loss=2.0318 val_acc=64.72% best=64.72% time=31.1s | throughput=1596.12 samples/s | stat_eff=-0.000000 loss/sample | goodput=1437.29 samples/s | cum_wall=0.29h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9981  acc@1=96.77%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [34/50] train_loss=1.0014 train_acc=96.73% val_loss=2.0368 val_acc=64.64% best=64.72% time=30.8s | throughput=1610.05 samples/s | stat_eff=0.000000 loss/sample | goodput=1456.33 samples/s | cum_wall=0.30h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9989  acc@1=96.75%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [35/50] train_loss=0.9993 train_acc=96.72% val_loss=2.0338 val_acc=64.45% best=64.72% time=30.9s | throughput=1608.74 samples/s | stat_eff=0.000000 loss/sample | goodput=1451.75 samples/s | cum_wall=0.30h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9836  acc@1=97.17%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [36/50] train_loss=0.9853 train_acc=97.08% val_loss=2.0259 val_acc=64.88% best=64.88% time=31.4s | throughput=1581.25 samples/s | stat_eff=-0.000001 loss/sample | goodput=1419.42 samples/s | cum_wall=0.31h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9769  acc@1=97.30%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [37/50] train_loss=0.9775 train_acc=97.23% val_loss=2.0273 val_acc=65.10% best=65.10% time=31.2s | throughput=1590.48 samples/s | stat_eff=0.000000 loss/sample | goodput=1435.33 samples/s | cum_wall=0.32h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9735  acc@1=97.31%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [38/50] train_loss=0.9723 train_acc=97.43% val_loss=2.0292 val_acc=65.00% best=65.10% time=31.4s | throughput=1582.14 samples/s | stat_eff=0.000000 loss/sample | goodput=1416.71 samples/s | cum_wall=0.33h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9650  acc@1=97.61%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [39/50] train_loss=0.9645 train_acc=97.61% val_loss=2.0252 val_acc=65.09% best=65.10% time=32.3s | throughput=1536.68 samples/s | stat_eff=0.000000 loss/sample | goodput=1368.84 samples/s | cum_wall=0.34h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9578  acc@1=97.65%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [40/50] train_loss=0.9615 train_acc=97.49% val_loss=2.0211 val_acc=65.43% best=65.43% time=31.4s | throughput=1583.05 samples/s | stat_eff=-0.000000 loss/sample | goodput=1425.73 samples/s | cum_wall=0.35h
+Saved checkpoint: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/ckpt_epoch_040.pth
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9585  acc@1=97.54%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [41/50] train_loss=0.9566 train_acc=97.67% val_loss=2.0165 val_acc=65.40% best=65.43% time=31.0s | throughput=1599.52 samples/s | stat_eff=-0.000000 loss/sample | goodput=1445.99 samples/s | cum_wall=0.36h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9540  acc@1=97.74%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [42/50] train_loss=0.9543 train_acc=97.75% val_loss=2.0201 val_acc=65.35% best=65.43% time=31.2s | throughput=1592.00 samples/s | stat_eff=0.000000 loss/sample | goodput=1431.97 samples/s | cum_wall=0.37h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9500  acc@1=97.77%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [43/50] train_loss=0.9514 train_acc=97.77% val_loss=2.0164 val_acc=65.52% best=65.52% time=31.2s | throughput=1593.02 samples/s | stat_eff=0.000000 loss/sample | goodput=1433.84 samples/s | cum_wall=0.37h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9464  acc@1=97.92%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [44/50] train_loss=0.9494 train_acc=97.82% val_loss=2.0143 val_acc=65.62% best=65.62% time=31.6s | throughput=1573.72 samples/s | stat_eff=0.000000 loss/sample | goodput=1413.40 samples/s | cum_wall=0.38h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9491  acc@1=97.96%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [45/50] train_loss=0.9471 train_acc=97.99% val_loss=2.0126 val_acc=65.45% best=65.62% time=31.3s | throughput=1586.03 samples/s | stat_eff=0.000001 loss/sample | goodput=1426.71 samples/s | cum_wall=0.39h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9467  acc@1=97.89%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [46/50] train_loss=0.9465 train_acc=97.84% val_loss=2.0132 val_acc=65.51% best=65.62% time=31.3s | throughput=1584.52 samples/s | stat_eff=-0.000001 loss/sample | goodput=1422.87 samples/s | cum_wall=0.40h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9395  acc@1=98.06%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [47/50] train_loss=0.9402 train_acc=98.04% val_loss=2.0103 val_acc=65.52% best=65.62% time=31.3s | throughput=1586.27 samples/s | stat_eff=-0.000001 loss/sample | goodput=1427.08 samples/s | cum_wall=0.41h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9418  acc@1=98.09%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [48/50] train_loss=0.9407 train_acc=98.13% val_loss=2.0118 val_acc=65.54% best=65.62% time=31.4s | throughput=1583.64 samples/s | stat_eff=-0.000000 loss/sample | goodput=1427.46 samples/s | cum_wall=0.42h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9384  acc@1=98.14%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [49/50] train_loss=0.9402 train_acc=98.07% val_loss=2.0118 val_acc=65.52% best=65.62% time=31.3s | throughput=1586.51 samples/s | stat_eff=0.000000 loss/sample | goodput=1419.74 samples/s | cum_wall=0.43h
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:698: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+  step 50/97  loss=0.9393  acc@1=98.00%
+/home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/classification/cifar100_dist_train.py:759: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp_enabled):
+Epoch [50/50] train_loss=0.9411 train_acc=97.95% val_loss=2.0118 val_acc=65.58% best=65.62% time=31.2s | throughput=1593.46 samples/s | stat_eff=0.000000 loss/sample | goodput=1441.29 samples/s | cum_wall=0.44h
+Saved checkpoint: /home/kalyazin.nikolay/project_diff/Dist_VMamba/VMamba/output/cifar100_vmamba_grid/gpu1_20260406_071125/ddp_g1_bs512_e50/ckpt_epoch_050.pth
