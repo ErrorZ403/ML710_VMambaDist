@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""
-CIFAR-100 training with VMamba in three distributed modes:
-1) Simple DDP
-2) Scan-branch tensor/model parallelism across ranks
-3) Pipeline parallelism by placing whole VSS blocks on different devices
-"""
-
 import argparse
 import math
 import os
@@ -962,7 +954,6 @@ def main() -> None:
     args = parse_args()
     env = init_distributed(args)
 
-    # scan_tp needs identical RNG across ranks; ddp should differ rank-wise.
     seed_everything(args.seed, env.rank, same_across_ranks=(args.parallel_mode == "scan_tp"))
     amp_enabled = torch.cuda.is_available() and (not args.disable_amp)
 
@@ -979,8 +970,8 @@ def main() -> None:
     if args.parallel_mode == "pipeline":
         device_ids = parse_int_list(args.pipeline_devices)
         model: nn.Module = PipelineVSSM(base_model, device_ids=device_ids)
-        input_device = model.input_device  # type: ignore[attr-defined]
-        loss_device = model.output_device  # type: ignore[attr-defined]
+        input_device = model.input_device 
+        loss_device = model.output_device 
     else:
         model = base_model.to(env.device)
 
